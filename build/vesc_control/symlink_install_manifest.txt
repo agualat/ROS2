@@ -1,0 +1,15 @@
+/home/jetson/ros2/install/vesc_control/share/ament_index/resource_index/package_run_dependencies/vesc_control
+/home/jetson/ros2/install/vesc_control/share/ament_index/resource_index/parent_prefix_path/vesc_control
+/home/jetson/ros2/install/vesc_control/share/vesc_control/environment/ament_prefix_path.sh
+/home/jetson/ros2/install/vesc_control/share/vesc_control/environment/ament_prefix_path.dsv
+/home/jetson/ros2/install/vesc_control/share/vesc_control/environment/path.sh
+/home/jetson/ros2/install/vesc_control/share/vesc_control/environment/path.dsv
+/home/jetson/ros2/install/vesc_control/share/vesc_control/local_setup.bash
+/home/jetson/ros2/install/vesc_control/share/vesc_control/local_setup.sh
+/home/jetson/ros2/install/vesc_control/share/vesc_control/local_setup.zsh
+/home/jetson/ros2/install/vesc_control/share/vesc_control/local_setup.dsv
+/home/jetson/ros2/install/vesc_control/share/vesc_control/package.dsv
+/home/jetson/ros2/install/vesc_control/share/ament_index/resource_index/packages/vesc_control
+/home/jetson/ros2/install/vesc_control/share/vesc_control/cmake/vesc_controlConfig.cmake
+/home/jetson/ros2/install/vesc_control/share/vesc_control/cmake/vesc_controlConfig-version.cmake
+/home/jetson/ros2/install/vesc_control/share/vesc_control/package.xml

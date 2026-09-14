@@ -1,0 +1,4 @@
+Invoking command in '/home/jetson/ros2/scr/build/vesc_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jetson/ros2/scr/build/vesc_control -- -j6 -l6
+Invoked command in '/home/jetson/ros2/scr/build/vesc_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jetson/ros2/scr/build/vesc_control -- -j6 -l6
+Invoking command in '/home/jetson/ros2/scr/build/vesc_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jetson/ros2/scr/build/vesc_control
+Invoked command in '/home/jetson/ros2/scr/build/vesc_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jetson/ros2/scr/build/vesc_control

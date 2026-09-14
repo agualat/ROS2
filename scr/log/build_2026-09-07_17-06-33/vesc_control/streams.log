@@ -1,0 +1,45 @@
+[0.025s] Invoking command in '/home/jetson/ros2/scr/build/vesc_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jetson/ros2/scr/build/vesc_control -- -j6 -l6
+[0.135s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.590s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.620s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.689s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.709s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.733s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.759s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.872s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.875s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.003s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.134s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.376s] -- Configuring done (1.3s)
+[1.400s] -- Generating done (0.0s)
+[1.408s] -- Build files have been written to: /home/jetson/ros2/scr/build/vesc_control
+[1.509s] [ 20%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/vesc_control_node.cpp.o[0m
+[21.743s] [ 80%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/servo_controller.cpp.o[0m
+[21.743s] [ 80%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/vesc_interface.cpp.o[0m
+[21.743s] [ 80%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/motor_controller.cpp.o[0m
+[22.310s] [100%] [32m[1mLinking CXX executable vesc_control_node[0m
+[23.153s] [100%] Built target vesc_control_node
+[23.181s] Invoked command in '/home/jetson/ros2/scr/build/vesc_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jetson/ros2/scr/build/vesc_control -- -j6 -l6
+[23.206s] Invoking command in '/home/jetson/ros2/scr/build/vesc_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jetson/ros2/scr/build/vesc_control
+[23.223s] -- Install configuration: ""
+[23.225s] -- Execute custom install script
+[23.226s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/lib/vesc_control/vesc_control_node
+[23.227s] -- Symlinking: /home/jetson/ros2/scr/install/vesc_control/include/vesc_control/motor_controller.hpp
+[23.246s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/include/vesc_control/servo_controller.hpp
+[23.246s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/include/vesc_control/vesc_interface.hpp
+[23.246s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/package_run_dependencies/vesc_control
+[23.247s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/parent_prefix_path/vesc_control
+[23.247s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/ament_prefix_path.sh
+[23.247s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/ament_prefix_path.dsv
+[23.248s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/path.sh
+[23.249s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/path.dsv
+[23.249s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.bash
+[23.250s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.sh
+[23.250s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.zsh
+[23.251s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.dsv
+[23.251s] -- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/package.dsv
+[23.270s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/packages/vesc_control
+[23.271s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/cmake/vesc_controlConfig.cmake
+[23.271s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/cmake/vesc_controlConfig-version.cmake
+[23.272s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/package.xml
+[23.276s] Invoked command in '/home/jetson/ros2/scr/build/vesc_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/jetson/ros2/scr/build/vesc_control

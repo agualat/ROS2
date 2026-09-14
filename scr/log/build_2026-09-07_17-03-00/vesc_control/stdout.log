@@ -1,0 +1,4 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/vesc_control_node.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/servo_controller.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/vesc_interface.cpp.o[0m
+[100%] [32m[1mLinking CXX executable vesc_control_node[0m

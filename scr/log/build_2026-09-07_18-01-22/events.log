@@ -1,0 +1,223 @@
+[0.000000] (-) TimerEvent: {}
+[0.000172] (vesc_control) JobQueued: {'identifier': 'vesc_control', 'dependencies': OrderedDict()}
+[0.000535] (vesc_control) JobStarted: {'identifier': 'vesc_control'}
+[0.012631] (vesc_control) JobProgress: {'identifier': 'vesc_control', 'progress': 'cmake'}
+[0.013707] (vesc_control) JobProgress: {'identifier': 'vesc_control', 'progress': 'build'}
+[0.014828] (vesc_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/ros2/scr/build/vesc_control', '--', '-j6', '-l6'], 'cwd': '/home/jetson/ros2/scr/build/vesc_control', 'env': OrderedDict({'USE_LOCAL_OAUTH': '', 'AI_AGENT': 'claude-code_2-1-260_agent', 'LANGUAGE': 'en', 'USER': 'jetson', 'SSH_CLIENT': '100.94.127.102 51628 22', 'CLAUDE_CODE_ENTRYPOINT': 'claude-desktop', 'LC_TIME': 'en_US.UTF-8', 'GIT_EDITOR': 'true', 'CLAUDE_CODE_EAGER_FLUSH': '1', 'XDG_SESSION_TYPE': 'tty', 'CLAUDE_AGENT_SDK_VERSION': '0.3.260', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'CLAUDE_CODE_MESSAGING_TOKEN': 'e0b8926232d484bf9aa20b5e18808724', 'HOME': '/home/jetson', 'DISABLE_MICROCOMPACT': '1', 'USE_STAGING_OAUTH': '', 'ROS_PYTHON_VERSION': '3', 'CLAUDE_SSH_DAEMON_CHILD': '1', 'CLAUDE_CODE_CHILD_SESSION': '1', 'LC_MONETARY': 'en_US.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'CLAUDE_CODE_SDK_HAS_HOST_AUTH_REFRESH': '1', 'CLAUDE_CODE_HOST_SESSION_ID': 'local_dfa4e7dc-9fbe-459b-8062-2942811e0570', 'API_TIMEOUT_MS': '900000', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jetson', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'ANTHROPIC_BASE_URL': 'https://api.anthropic.com', 'XDG_SESSION_ID': '4', 'CLAUDE_CODE_ENABLE_ASK_USER_QUESTION_TOOL': 'true', 'CLAUDE_CODE_REPORT_FINDINGS': '1', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.claude/remote/plugins/b246307be4104dff/bin', 'PAPERSIZE': 'letter', 'COREPACK_ENABLE_AUTO_PIN': '0', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'CLAUDE_EFFORT': 'xhigh', 'MCP_SERVER_CONNECTION_BATCH_SIZE': '8', 'CLAUDE_PID': '6655', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'CLAUDE_PREVIEW_CLASSIFIER_FLOOR': '1', 'CLAUDE_CODE_DISABLE_TERMINAL_TITLE': '1', 'CLAUDE_CODE_EMIT_TOOL_USE_SUMMARIES': 'false', 'CLAUDE_CODE_SESSION_ID': 'a8882f52-3f80-4ff7-99bf-aecc6692393a', 'CLAUDE_CODE_DISABLE_CRON': '', 'CLAUDECODE': '1', 'CLAUDE_CODE_OAUTH_SCOPES': 'user:inference user:file_upload user:profile user:sessions:claude_code', 'LC_MEASUREMENT': 'en_US.UTF-8', 'CLAUDE_CODE_SDK_HAS_OAUTH_REFRESH': '1', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jetson/ros2/scr/build/vesc_control', 'DISABLE_AUTOUPDATER': '1', 'SSH_CONNECTION': '100.94.127.102 51628 100.95.74.20 22', 'CLAUDE_CODE_EXECPATH': '/home/jetson/.claude/remote/ccd-cli/2.1.260', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'CLAUDE_CODE_MESSAGING_SOCKET': '/run/user/1000/cc-socks/6655.sock', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099291] (-) TimerEvent: {}
+[0.120467] (vesc_control) StdoutLine: {'line': b'[ 40%] Building CXX object CMakeFiles/vesc_control_node.dir/src/vesc_control_node.cpp.o\n'}
+[0.120954] (vesc_control) StdoutLine: {'line': b'[ 40%] Building CXX object CMakeFiles/vesc_control_node.dir/src/motor_controller.cpp.o\n'}
+[0.199467] (-) TimerEvent: {}
+[0.299828] (-) TimerEvent: {}
+[0.400194] (-) TimerEvent: {}
+[0.500566] (-) TimerEvent: {}
+[0.600958] (-) TimerEvent: {}
+[0.701431] (-) TimerEvent: {}
+[0.801895] (-) TimerEvent: {}
+[0.902323] (-) TimerEvent: {}
+[1.002761] (-) TimerEvent: {}
+[1.103183] (-) TimerEvent: {}
+[1.203866] (-) TimerEvent: {}
+[1.304291] (-) TimerEvent: {}
+[1.404680] (-) TimerEvent: {}
+[1.505069] (-) TimerEvent: {}
+[1.605510] (-) TimerEvent: {}
+[1.705941] (-) TimerEvent: {}
+[1.806374] (-) TimerEvent: {}
+[1.906806] (-) TimerEvent: {}
+[2.007246] (-) TimerEvent: {}
+[2.107674] (-) TimerEvent: {}
+[2.208105] (-) TimerEvent: {}
+[2.308540] (-) TimerEvent: {}
+[2.408975] (-) TimerEvent: {}
+[2.509446] (-) TimerEvent: {}
+[2.609872] (-) TimerEvent: {}
+[2.710300] (-) TimerEvent: {}
+[2.810731] (-) TimerEvent: {}
+[2.911157] (-) TimerEvent: {}
+[3.011584] (-) TimerEvent: {}
+[3.112003] (-) TimerEvent: {}
+[3.212450] (-) TimerEvent: {}
+[3.312880] (-) TimerEvent: {}
+[3.413290] (-) TimerEvent: {}
+[3.513747] (-) TimerEvent: {}
+[3.614148] (-) TimerEvent: {}
+[3.714563] (-) TimerEvent: {}
+[3.814986] (-) TimerEvent: {}
+[3.915407] (-) TimerEvent: {}
+[4.015834] (-) TimerEvent: {}
+[4.116245] (-) TimerEvent: {}
+[4.216663] (-) TimerEvent: {}
+[4.317096] (-) TimerEvent: {}
+[4.417544] (-) TimerEvent: {}
+[4.517989] (-) TimerEvent: {}
+[4.618418] (-) TimerEvent: {}
+[4.718860] (-) TimerEvent: {}
+[4.819300] (-) TimerEvent: {}
+[4.919736] (-) TimerEvent: {}
+[5.020162] (-) TimerEvent: {}
+[5.120586] (-) TimerEvent: {}
+[5.221013] (-) TimerEvent: {}
+[5.322031] (-) TimerEvent: {}
+[5.422476] (-) TimerEvent: {}
+[5.522921] (-) TimerEvent: {}
+[5.623358] (-) TimerEvent: {}
+[5.723789] (-) TimerEvent: {}
+[5.824221] (-) TimerEvent: {}
+[5.924647] (-) TimerEvent: {}
+[6.025078] (-) TimerEvent: {}
+[6.125522] (-) TimerEvent: {}
+[6.225951] (-) TimerEvent: {}
+[6.326373] (-) TimerEvent: {}
+[6.427029] (-) TimerEvent: {}
+[6.527449] (-) TimerEvent: {}
+[6.627875] (-) TimerEvent: {}
+[6.728302] (-) TimerEvent: {}
+[6.828724] (-) TimerEvent: {}
+[6.929153] (-) TimerEvent: {}
+[7.029630] (-) TimerEvent: {}
+[7.130046] (-) TimerEvent: {}
+[7.230562] (-) TimerEvent: {}
+[7.330984] (-) TimerEvent: {}
+[7.431418] (-) TimerEvent: {}
+[7.531837] (-) TimerEvent: {}
+[7.632250] (-) TimerEvent: {}
+[7.732677] (-) TimerEvent: {}
+[7.833098] (-) TimerEvent: {}
+[7.933537] (-) TimerEvent: {}
+[8.033979] (-) TimerEvent: {}
+[8.134418] (-) TimerEvent: {}
+[8.234856] (-) TimerEvent: {}
+[8.335284] (-) TimerEvent: {}
+[8.435707] (-) TimerEvent: {}
+[8.536129] (-) TimerEvent: {}
+[8.636568] (-) TimerEvent: {}
+[8.736996] (-) TimerEvent: {}
+[8.837483] (-) TimerEvent: {}
+[8.937957] (-) TimerEvent: {}
+[9.038594] (-) TimerEvent: {}
+[9.139032] (-) TimerEvent: {}
+[9.239460] (-) TimerEvent: {}
+[9.339896] (-) TimerEvent: {}
+[9.440325] (-) TimerEvent: {}
+[9.540755] (-) TimerEvent: {}
+[9.641184] (-) TimerEvent: {}
+[9.741639] (-) TimerEvent: {}
+[9.842065] (-) TimerEvent: {}
+[9.942500] (-) TimerEvent: {}
+[10.042926] (-) TimerEvent: {}
+[10.143355] (-) TimerEvent: {}
+[10.243782] (-) TimerEvent: {}
+[10.344210] (-) TimerEvent: {}
+[10.444643] (-) TimerEvent: {}
+[10.545070] (-) TimerEvent: {}
+[10.645606] (-) TimerEvent: {}
+[10.746037] (-) TimerEvent: {}
+[10.846474] (-) TimerEvent: {}
+[10.947181] (-) TimerEvent: {}
+[11.047587] (-) TimerEvent: {}
+[11.147964] (-) TimerEvent: {}
+[11.248337] (-) TimerEvent: {}
+[11.348730] (-) TimerEvent: {}
+[11.449130] (-) TimerEvent: {}
+[11.549501] (-) TimerEvent: {}
+[11.649867] (-) TimerEvent: {}
+[11.750254] (-) TimerEvent: {}
+[11.850656] (-) TimerEvent: {}
+[11.951057] (-) TimerEvent: {}
+[12.051457] (-) TimerEvent: {}
+[12.151859] (-) TimerEvent: {}
+[12.252232] (-) TimerEvent: {}
+[12.352610] (-) TimerEvent: {}
+[12.453003] (-) TimerEvent: {}
+[12.553424] (-) TimerEvent: {}
+[12.653819] (-) TimerEvent: {}
+[12.754218] (-) TimerEvent: {}
+[12.854619] (-) TimerEvent: {}
+[12.955032] (-) TimerEvent: {}
+[13.055446] (-) TimerEvent: {}
+[13.155861] (-) TimerEvent: {}
+[13.256257] (-) TimerEvent: {}
+[13.356659] (-) TimerEvent: {}
+[13.457076] (-) TimerEvent: {}
+[13.557512] (-) TimerEvent: {}
+[13.657918] (-) TimerEvent: {}
+[13.758331] (-) TimerEvent: {}
+[13.858748] (-) TimerEvent: {}
+[13.959165] (-) TimerEvent: {}
+[14.059573] (-) TimerEvent: {}
+[14.159987] (-) TimerEvent: {}
+[14.260393] (-) TimerEvent: {}
+[14.360860] (-) TimerEvent: {}
+[14.461295] (-) TimerEvent: {}
+[14.561760] (-) TimerEvent: {}
+[14.662174] (-) TimerEvent: {}
+[14.762600] (-) TimerEvent: {}
+[14.863029] (-) TimerEvent: {}
+[14.963705] (-) TimerEvent: {}
+[15.064122] (-) TimerEvent: {}
+[15.164526] (-) TimerEvent: {}
+[15.264923] (-) TimerEvent: {}
+[15.365357] (-) TimerEvent: {}
+[15.465771] (-) TimerEvent: {}
+[15.566190] (-) TimerEvent: {}
+[15.666615] (-) TimerEvent: {}
+[15.767032] (-) TimerEvent: {}
+[15.867452] (-) TimerEvent: {}
+[15.967870] (-) TimerEvent: {}
+[16.068288] (-) TimerEvent: {}
+[16.168699] (-) TimerEvent: {}
+[16.269092] (-) TimerEvent: {}
+[16.369499] (-) TimerEvent: {}
+[16.469913] (-) TimerEvent: {}
+[16.570318] (-) TimerEvent: {}
+[16.670691] (-) TimerEvent: {}
+[16.771066] (-) TimerEvent: {}
+[16.871483] (-) TimerEvent: {}
+[16.971909] (-) TimerEvent: {}
+[17.072332] (-) TimerEvent: {}
+[17.172763] (-) TimerEvent: {}
+[17.273186] (-) TimerEvent: {}
+[17.373642] (-) TimerEvent: {}
+[17.474073] (-) TimerEvent: {}
+[17.574514] (-) TimerEvent: {}
+[17.674944] (-) TimerEvent: {}
+[17.775385] (-) TimerEvent: {}
+[17.875829] (-) TimerEvent: {}
+[17.940076] (vesc_control) StdoutLine: {'line': b'[ 60%] Linking CXX executable vesc_control_node\n'}
+[17.975996] (-) TimerEvent: {}
+[18.076383] (-) TimerEvent: {}
+[18.176772] (-) TimerEvent: {}
+[18.277160] (-) TimerEvent: {}
+[18.377518] (-) TimerEvent: {}
+[18.477863] (-) TimerEvent: {}
+[18.578223] (-) TimerEvent: {}
+[18.629562] (vesc_control) StdoutLine: {'line': b'[100%] Built target vesc_control_node\n'}
+[18.650654] (vesc_control) CommandEnded: {'returncode': 0}
+[18.651864] (vesc_control) JobProgress: {'identifier': 'vesc_control', 'progress': 'install'}
+[18.670265] (vesc_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetson/ros2/scr/build/vesc_control'], 'cwd': '/home/jetson/ros2/scr/build/vesc_control', 'env': OrderedDict({'USE_LOCAL_OAUTH': '', 'AI_AGENT': 'claude-code_2-1-260_agent', 'LANGUAGE': 'en', 'USER': 'jetson', 'SSH_CLIENT': '100.94.127.102 51628 22', 'CLAUDE_CODE_ENTRYPOINT': 'claude-desktop', 'LC_TIME': 'en_US.UTF-8', 'GIT_EDITOR': 'true', 'CLAUDE_CODE_EAGER_FLUSH': '1', 'XDG_SESSION_TYPE': 'tty', 'CLAUDE_AGENT_SDK_VERSION': '0.3.260', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'CLAUDE_CODE_MESSAGING_TOKEN': 'e0b8926232d484bf9aa20b5e18808724', 'HOME': '/home/jetson', 'DISABLE_MICROCOMPACT': '1', 'USE_STAGING_OAUTH': '', 'ROS_PYTHON_VERSION': '3', 'CLAUDE_SSH_DAEMON_CHILD': '1', 'CLAUDE_CODE_CHILD_SESSION': '1', 'LC_MONETARY': 'en_US.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'CLAUDE_CODE_SDK_HAS_HOST_AUTH_REFRESH': '1', 'CLAUDE_CODE_HOST_SESSION_ID': 'local_dfa4e7dc-9fbe-459b-8062-2942811e0570', 'API_TIMEOUT_MS': '900000', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jetson', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'ANTHROPIC_BASE_URL': 'https://api.anthropic.com', 'XDG_SESSION_ID': '4', 'CLAUDE_CODE_ENABLE_ASK_USER_QUESTION_TOOL': 'true', 'CLAUDE_CODE_REPORT_FINDINGS': '1', 'MCP_CONNECTION_NONBLOCKING': 'true', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jetson/.claude/remote/plugins/b246307be4104dff/bin', 'PAPERSIZE': 'letter', 'COREPACK_ENABLE_AUTO_PIN': '0', 'LC_ADDRESS': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'CLAUDE_EFFORT': 'xhigh', 'MCP_SERVER_CONNECTION_BATCH_SIZE': '8', 'CLAUDE_PID': '6655', 'NoDefaultCurrentDirectoryInExePath': '1', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'en_US.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'CLAUDE_PREVIEW_CLASSIFIER_FLOOR': '1', 'CLAUDE_CODE_DISABLE_TERMINAL_TITLE': '1', 'CLAUDE_CODE_EMIT_TOOL_USE_SUMMARIES': 'false', 'CLAUDE_CODE_SESSION_ID': 'a8882f52-3f80-4ff7-99bf-aecc6692393a', 'CLAUDE_CODE_DISABLE_CRON': '', 'CLAUDECODE': '1', 'CLAUDE_CODE_OAUTH_SCOPES': 'user:inference user:file_upload user:profile user:sessions:claude_code', 'LC_MEASUREMENT': 'en_US.UTF-8', 'CLAUDE_CODE_SDK_HAS_OAUTH_REFRESH': '1', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jetson/ros2/scr/build/vesc_control', 'DISABLE_AUTOUPDATER': '1', 'SSH_CONNECTION': '100.94.127.102 51628 100.95.74.20 22', 'CLAUDE_CODE_EXECPATH': '/home/jetson/.claude/remote/ccd-cli/2.1.260', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'CLAUDE_CODE_MESSAGING_SOCKET': '/run/user/1000/cc-socks/6655.sock', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[18.678351] (-) TimerEvent: {}
+[18.687419] (vesc_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[18.688235] (vesc_control) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[18.688882] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/lib/vesc_control/vesc_control_node\n'}
+[18.689693] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/include/vesc_control/motor_controller.hpp\n'}
+[18.689957] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/include/vesc_control/servo_controller.hpp\n'}
+[18.690195] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/include/vesc_control/vesc_interface.hpp\n'}
+[18.690433] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/package_run_dependencies/vesc_control\n'}
+[18.690762] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/parent_prefix_path/vesc_control\n'}
+[18.691098] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/ament_prefix_path.sh\n'}
+[18.691348] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/ament_prefix_path.dsv\n'}
+[18.691665] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/path.sh\n'}
+[18.691929] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/path.dsv\n'}
+[18.692195] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.bash\n'}
+[18.692463] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.sh\n'}
+[18.692746] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.zsh\n'}
+[18.693014] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.dsv\n'}
+[18.693235] (vesc_control) StdoutLine: {'line': b'-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/package.dsv\n'}
+[18.712051] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/packages/vesc_control\n'}
+[18.712595] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/cmake/vesc_controlConfig.cmake\n'}
+[18.712859] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/cmake/vesc_controlConfig-version.cmake\n'}
+[18.713028] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/package.xml\n'}
+[18.716327] (vesc_control) CommandEnded: {'returncode': 0}
+[18.771965] (vesc_control) JobEnded: {'identifier': 'vesc_control', 'rc': 0}
+[18.773641] (-) EventReactorShutdown: {}

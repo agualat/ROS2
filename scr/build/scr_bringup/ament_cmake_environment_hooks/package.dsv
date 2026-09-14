@@ -1,0 +1,4 @@
+source;share/scr_bringup/local_setup.bash
+source;share/scr_bringup/local_setup.dsv
+source;share/scr_bringup/local_setup.sh
+source;share/scr_bringup/local_setup.zsh

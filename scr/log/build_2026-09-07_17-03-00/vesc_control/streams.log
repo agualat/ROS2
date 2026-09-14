@@ -1,0 +1,15 @@
+[0.024s] Invoking command in '/home/jetson/ros2/scr/build/vesc_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jetson/ros2/scr/build/vesc_control -- -j6 -l6
+[0.239s] [ 25%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/vesc_control_node.cpp.o[0m
+[0.244s] [ 75%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/servo_controller.cpp.o[0m
+[0.244s] [ 50%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/vesc_interface.cpp.o[0m
+[70.246s] [100%] [32m[1mLinking CXX executable vesc_control_node[0m
+[70.955s] /usr/bin/ld: CMakeFiles/vesc_control_node.dir/src/vesc_control_node.cpp.o: in function `VescControlNode::motorCallback(std::shared_ptr<std_msgs::msg::Int32_<std::allocator<void> > >)':
+[70.955s] vesc_control_node.cpp:(.text._ZN15VescControlNode13motorCallbackESt10shared_ptrIN8std_msgs3msg6Int32_ISaIvEEEE[_ZN15VescControlNode13motorCallbackESt10shared_ptrIN8std_msgs3msg6Int32_ISaIvEEEE]+0x50): undefined reference to `vesc_control::MotorController::setErpm(int)'
+[70.955s] /usr/bin/ld: vesc_control_node.cpp:(.text._ZN15VescControlNode13motorCallbackESt10shared_ptrIN8std_msgs3msg6Int32_ISaIvEEEE[_ZN15VescControlNode13motorCallbackESt10shared_ptrIN8std_msgs3msg6Int32_ISaIvEEEE]+0x330): undefined reference to `vesc_control::MotorController::getErpm() const'
+[70.958s] /usr/bin/ld: CMakeFiles/vesc_control_node.dir/src/vesc_control_node.cpp.o: in function `std::__detail::_MakeUniq<vesc_control::MotorController>::__single_object std::make_unique<vesc_control::MotorController, vesc_control::VescInterface&>(vesc_control::VescInterface&)':
+[70.958s] vesc_control_node.cpp:(.text._ZSt11make_uniqueIN12vesc_control15MotorControllerEJRNS0_13VescInterfaceEEENSt8__detail9_MakeUniqIT_E15__single_objectEDpOT0_[_ZSt11make_uniqueIN12vesc_control15MotorControllerEJRNS0_13VescInterfaceEEENSt8__detail9_MakeUniqIT_E15__single_objectEDpOT0_]+0x38): undefined reference to `vesc_control::MotorController::MotorController(vesc_control::VescInterface&)'
+[71.105s] collect2: error: ld returned 1 exit status
+[71.110s] gmake[2]: *** [CMakeFiles/vesc_control_node.dir/build.make:203: vesc_control_node] Error 1
+[71.114s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/vesc_control_node.dir/all] Error 2
+[71.115s] gmake: *** [Makefile:146: all] Error 2
+[71.122s] Invoked command in '/home/jetson/ros2/scr/build/vesc_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/jetson/ros2/scr/build/vesc_control -- -j6 -l6

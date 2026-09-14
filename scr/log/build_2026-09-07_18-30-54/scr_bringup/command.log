@@ -1,0 +1,6 @@
+Invoking command in '/home/jetson/ros2/scr/build/scr_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetson/ros2/scr/scr_bringup -DCMAKE_INSTALL_PREFIX=/home/jetson/ros2/scr/install/scr_bringup
+Invoked command in '/home/jetson/ros2/scr/build/scr_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetson/ros2/scr/scr_bringup -DCMAKE_INSTALL_PREFIX=/home/jetson/ros2/scr/install/scr_bringup
+Invoking command in '/home/jetson/ros2/scr/build/scr_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetson/ros2/scr/build/scr_bringup -- -j6 -l6
+Invoked command in '/home/jetson/ros2/scr/build/scr_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetson/ros2/scr/build/scr_bringup -- -j6 -l6
+Invoking command in '/home/jetson/ros2/scr/build/scr_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetson/ros2/scr/build/scr_bringup
+Invoked command in '/home/jetson/ros2/scr/build/scr_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetson/ros2/scr/build/scr_bringup

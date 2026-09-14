@@ -1,0 +1,54 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Configuring done (2.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/jetson/ros2/scr/build/vesc_control
+[ 25%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/vesc_control_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/vesc_interface.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/servo_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable vesc_control_node[0m
+[100%] Built target vesc_control_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/lib/vesc_control/vesc_control_node
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/include/vesc_control/servo_controller.hpp
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/include/vesc_control/vesc_interface.hpp
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/package_run_dependencies/vesc_control
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/parent_prefix_path/vesc_control
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/ament_prefix_path.sh
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/ament_prefix_path.dsv
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/path.sh
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/path.dsv
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.bash
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.sh
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.zsh
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.dsv
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/package.dsv
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/packages/vesc_control
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/cmake/vesc_controlConfig.cmake
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/cmake/vesc_controlConfig-version.cmake
+-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/package.xml

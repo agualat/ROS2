@@ -1,0 +1,29 @@
+[0.021s] Invoking command in '/home/jetson/ros2/scr/build/vesc_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetson/ros2/scr/build/vesc_control -- -j6 -l6
+[0.169s] [ 40%] Building CXX object CMakeFiles/vesc_control_node.dir/src/motor_controller.cpp.o
+[0.172s] [ 40%] Building CXX object CMakeFiles/vesc_control_node.dir/src/vesc_control_node.cpp.o
+[21.774s] [ 60%] Linking CXX executable vesc_control_node
+[22.516s] [100%] Built target vesc_control_node
+[22.540s] Invoked command in '/home/jetson/ros2/scr/build/vesc_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetson/ros2/scr/build/vesc_control -- -j6 -l6
+[22.557s] Invoking command in '/home/jetson/ros2/scr/build/vesc_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetson/ros2/scr/build/vesc_control
+[22.571s] -- Install configuration: ""
+[22.572s] -- Execute custom install script
+[22.573s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/lib/vesc_control/vesc_control_node
+[22.574s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/include/vesc_control/motor_controller.hpp
+[22.574s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/include/vesc_control/servo_controller.hpp
+[22.575s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/include/vesc_control/vesc_interface.hpp
+[22.575s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/package_run_dependencies/vesc_control
+[22.576s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/parent_prefix_path/vesc_control
+[22.576s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/ament_prefix_path.sh
+[22.577s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/ament_prefix_path.dsv
+[22.577s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/path.sh
+[22.577s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/path.dsv
+[22.577s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.bash
+[22.577s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.sh
+[22.577s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.zsh
+[22.578s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.dsv
+[22.578s] -- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/package.dsv
+[22.595s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/packages/vesc_control
+[22.595s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/cmake/vesc_controlConfig.cmake
+[22.595s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/cmake/vesc_controlConfig-version.cmake
+[22.597s] -- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/package.xml
+[22.599s] Invoked command in '/home/jetson/ros2/scr/build/vesc_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetson/ros2/scr/build/vesc_control

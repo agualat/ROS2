@@ -1,0 +1,9 @@
+/usr/bin/ld: CMakeFiles/vesc_control_node.dir/src/vesc_control_node.cpp.o: in function `VescControlNode::motorCallback(std::shared_ptr<std_msgs::msg::Int32_<std::allocator<void> > >)':
+vesc_control_node.cpp:(.text._ZN15VescControlNode13motorCallbackESt10shared_ptrIN8std_msgs3msg6Int32_ISaIvEEEE[_ZN15VescControlNode13motorCallbackESt10shared_ptrIN8std_msgs3msg6Int32_ISaIvEEEE]+0x50): undefined reference to `vesc_control::MotorController::setErpm(int)'
+/usr/bin/ld: vesc_control_node.cpp:(.text._ZN15VescControlNode13motorCallbackESt10shared_ptrIN8std_msgs3msg6Int32_ISaIvEEEE[_ZN15VescControlNode13motorCallbackESt10shared_ptrIN8std_msgs3msg6Int32_ISaIvEEEE]+0x330): undefined reference to `vesc_control::MotorController::getErpm() const'
+/usr/bin/ld: CMakeFiles/vesc_control_node.dir/src/vesc_control_node.cpp.o: in function `std::__detail::_MakeUniq<vesc_control::MotorController>::__single_object std::make_unique<vesc_control::MotorController, vesc_control::VescInterface&>(vesc_control::VescInterface&)':
+vesc_control_node.cpp:(.text._ZSt11make_uniqueIN12vesc_control15MotorControllerEJRNS0_13VescInterfaceEEENSt8__detail9_MakeUniqIT_E15__single_objectEDpOT0_[_ZSt11make_uniqueIN12vesc_control15MotorControllerEJRNS0_13VescInterfaceEEENSt8__detail9_MakeUniqIT_E15__single_objectEDpOT0_]+0x38): undefined reference to `vesc_control::MotorController::MotorController(vesc_control::VescInterface&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/vesc_control_node.dir/build.make:203: vesc_control_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/vesc_control_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

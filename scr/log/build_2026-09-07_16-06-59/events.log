@@ -1,0 +1,154 @@
+[0.000000] (-) TimerEvent: {}
+[0.001487] (vesc_control) JobQueued: {'identifier': 'vesc_control', 'dependencies': OrderedDict()}
+[0.002714] (vesc_control) JobStarted: {'identifier': 'vesc_control'}
+[0.019924] (vesc_control) JobProgress: {'identifier': 'vesc_control', 'progress': 'cmake'}
+[0.021697] (vesc_control) JobProgress: {'identifier': 'vesc_control', 'progress': 'build'}
+[0.022771] (vesc_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetson/ros2/scr/build/vesc_control', '--', '-j6', '-l6'], 'cwd': '/home/jetson/ros2/scr/build/vesc_control', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en', 'USER': 'jetson', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jetson', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/jetson/ros2/scr', 'TERM_PROGRAM_VERSION': '1.135.0', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '5120', 'BUNDLED_DEBUGPY_PATH': '/home/jetson/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jetson/ros2/scr/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jetson', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jetson/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/jetson:@/tmp/.ICE-unix/5076,unix/jetson:/tmp/.ICE-unix/5076', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6ed478b4_2352_42bd_ae3b_b1063d960d6c', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/jetson/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-cb426183558481f5.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/jetson/.config/Code/User/workspaceStorage/745a5a3529dfeb342e60dcabf3eef19a/ms-python.python/pythonrc.py', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4e59927db1.sock', 'GNOME_TERMINAL_SERVICE': ':1.153', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jetson/ros2/scr/install/vesc_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jetson/ros2/scr/build/vesc_control', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/jetson/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/jetson/ros2/scr/install/vesc_control:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099523] (-) TimerEvent: {}
+[0.124813] (vesc_control) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.199655] (-) TimerEvent: {}
+[0.300236] (-) TimerEvent: {}
+[0.401569] (-) TimerEvent: {}
+[0.502501] (-) TimerEvent: {}
+[0.603687] (-) TimerEvent: {}
+[0.658306] (vesc_control) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.685301] (vesc_control) StdoutLine: {'line': b'-- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.703830] (-) TimerEvent: {}
+[0.740876] (vesc_control) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.759472] (vesc_control) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.783525] (vesc_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.804009] (-) TimerEvent: {}
+[0.810587] (vesc_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.904682] (-) TimerEvent: {}
+[0.958572] (vesc_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.959103] (vesc_control) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.005139] (-) TimerEvent: {}
+[1.095688] (vesc_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.105300] (-) TimerEvent: {}
+[1.206042] (-) TimerEvent: {}
+[1.216631] (vesc_control) StdoutLine: {'line': b'-- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[1.244267] (vesc_control) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.306187] (-) TimerEvent: {}
+[1.406731] (-) TimerEvent: {}
+[1.484990] (vesc_control) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.487222] (vesc_control) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.487530] (vesc_control) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.488583] (vesc_control) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.490190] (vesc_control) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.490490] (vesc_control) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.491176] (vesc_control) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.498852] (vesc_control) StdoutLine: {'line': b'-- Configuring done (1.4s)\n'}
+[1.506913] (-) TimerEvent: {}
+[1.524658] (vesc_control) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.537167] (vesc_control) StdoutLine: {'line': b'-- Build files have been written to: /home/jetson/ros2/scr/build/vesc_control\n'}
+[1.607111] (-) TimerEvent: {}
+[1.614198] (vesc_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/vesc_control_node.dir/src/vesc_control_node.cpp.o\x1b[0m\n'}
+[1.707280] (-) TimerEvent: {}
+[1.807987] (-) TimerEvent: {}
+[1.908637] (-) TimerEvent: {}
+[2.009235] (-) TimerEvent: {}
+[2.109909] (-) TimerEvent: {}
+[2.210667] (-) TimerEvent: {}
+[2.311666] (-) TimerEvent: {}
+[2.412322] (-) TimerEvent: {}
+[2.512972] (-) TimerEvent: {}
+[2.615131] (-) TimerEvent: {}
+[2.715728] (-) TimerEvent: {}
+[2.817167] (-) TimerEvent: {}
+[2.917804] (-) TimerEvent: {}
+[3.018901] (-) TimerEvent: {}
+[3.119578] (-) TimerEvent: {}
+[3.220196] (-) TimerEvent: {}
+[3.320812] (-) TimerEvent: {}
+[3.423146] (-) TimerEvent: {}
+[3.524985] (-) TimerEvent: {}
+[3.625651] (-) TimerEvent: {}
+[3.726933] (-) TimerEvent: {}
+[3.828011] (-) TimerEvent: {}
+[3.928644] (-) TimerEvent: {}
+[4.029253] (-) TimerEvent: {}
+[4.130358] (-) TimerEvent: {}
+[4.232529] (-) TimerEvent: {}
+[4.333157] (-) TimerEvent: {}
+[4.433744] (-) TimerEvent: {}
+[4.534354] (-) TimerEvent: {}
+[4.634945] (-) TimerEvent: {}
+[4.735548] (-) TimerEvent: {}
+[4.836157] (-) TimerEvent: {}
+[4.936777] (-) TimerEvent: {}
+[5.037363] (-) TimerEvent: {}
+[5.137987] (-) TimerEvent: {}
+[5.238707] (-) TimerEvent: {}
+[5.339306] (-) TimerEvent: {}
+[5.439972] (-) TimerEvent: {}
+[5.540689] (-) TimerEvent: {}
+[5.641426] (-) TimerEvent: {}
+[5.742167] (-) TimerEvent: {}
+[5.842781] (-) TimerEvent: {}
+[5.943391] (-) TimerEvent: {}
+[6.043978] (-) TimerEvent: {}
+[6.144628] (-) TimerEvent: {}
+[6.245305] (-) TimerEvent: {}
+[6.346072] (-) TimerEvent: {}
+[6.447016] (-) TimerEvent: {}
+[6.548053] (-) TimerEvent: {}
+[6.648886] (-) TimerEvent: {}
+[6.749646] (-) TimerEvent: {}
+[6.850391] (-) TimerEvent: {}
+[6.951182] (-) TimerEvent: {}
+[7.051936] (-) TimerEvent: {}
+[7.152716] (-) TimerEvent: {}
+[7.253462] (-) TimerEvent: {}
+[7.354204] (-) TimerEvent: {}
+[7.454931] (-) TimerEvent: {}
+[7.555682] (-) TimerEvent: {}
+[7.656448] (-) TimerEvent: {}
+[7.757226] (-) TimerEvent: {}
+[7.857966] (-) TimerEvent: {}
+[7.958702] (-) TimerEvent: {}
+[8.059693] (-) TimerEvent: {}
+[8.160299] (-) TimerEvent: {}
+[8.260965] (-) TimerEvent: {}
+[8.361592] (-) TimerEvent: {}
+[8.462248] (-) TimerEvent: {}
+[8.563135] (-) TimerEvent: {}
+[8.664693] (-) TimerEvent: {}
+[8.765381] (-) TimerEvent: {}
+[8.865950] (-) TimerEvent: {}
+[8.966547] (-) TimerEvent: {}
+[9.069621] (-) TimerEvent: {}
+[9.171944] (-) TimerEvent: {}
+[9.274217] (-) TimerEvent: {}
+[9.375689] (-) TimerEvent: {}
+[9.400974] (vesc_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable vesc_control_node\x1b[0m\n'}
+[9.475868] (-) TimerEvent: {}
+[9.577520] (-) TimerEvent: {}
+[9.678449] (-) TimerEvent: {}
+[9.784638] (-) TimerEvent: {}
+[9.810891] (vesc_control) StdoutLine: {'line': b'[100%] Built target vesc_control_node\n'}
+[9.844134] (vesc_control) CommandEnded: {'returncode': 0}
+[9.847603] (vesc_control) JobProgress: {'identifier': 'vesc_control', 'progress': 'install'}
+[9.867969] (vesc_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetson/ros2/scr/build/vesc_control'], 'cwd': '/home/jetson/ros2/scr/build/vesc_control', 'env': OrderedDict({'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en', 'USER': 'jetson', 'LC_TIME': 'en_US.UTF-8', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/jetson', 'CHROME_DESKTOP': 'code.desktop', 'OLDPWD': '/home/jetson/ros2/scr', 'TERM_PROGRAM_VERSION': '1.135.0', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'en_US.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '5120', 'BUNDLED_DEBUGPY_PATH': '/home/jetson/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/jetson/ros2/scr/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'jetson', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'jetson', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'WINDOWPATH': '2', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/jetson/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts', 'SESSION_MANAGER': 'local/jetson:@/tmp/.ICE-unix/5076,unix/jetson:/tmp/.ICE-unix/5076', 'PAPERSIZE': 'letter', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'en_US.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/6ed478b4_2352_42bd_ae3b_b1063d960d6c', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/jetson/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-cb426183558481f5.txt', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/jetson/.config/Code/User/workspaceStorage/745a5a3529dfeb342e60dcabf3eef19a/ms-python.python/pythonrc.py', 'LC_TELEPHONE': 'en_US.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-4e59927db1.sock', 'GNOME_TERMINAL_SERVICE': ':1.153', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/jetson/ros2/scr/install/vesc_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'en_US.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'en_US.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'en_US.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/jetson/ros2/scr/build/vesc_control', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/jetson/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'en_US.UTF-8', 'LC_PAPER': 'en_US.UTF-8', 'COLCON': '1', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/jetson/ros2/scr/install/vesc_control:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[9.883914] (vesc_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.884968] (-) TimerEvent: {}
+[9.886047] (vesc_control) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[9.886363] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/package_run_dependencies/vesc_control\n'}
+[9.886869] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/parent_prefix_path/vesc_control\n'}
+[9.887976] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/ament_prefix_path.sh\n'}
+[9.888314] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/ament_prefix_path.dsv\n'}
+[9.888764] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/path.sh\n'}
+[9.889159] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/environment/path.dsv\n'}
+[9.889589] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.bash\n'}
+[9.889930] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.sh\n'}
+[9.891537] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.zsh\n'}
+[9.891731] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/local_setup.dsv\n'}
+[9.891894] (vesc_control) StdoutLine: {'line': b'-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/package.dsv\n'}
+[9.912016] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/ament_index/resource_index/packages/vesc_control\n'}
+[9.913235] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/cmake/vesc_controlConfig.cmake\n'}
+[9.913622] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/cmake/vesc_controlConfig-version.cmake\n'}
+[9.913817] (vesc_control) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetson/ros2/scr/install/vesc_control/share/vesc_control/package.xml\n'}
+[9.914745] (vesc_control) StdoutLine: {'line': b'-- Symlinking: /home/jetson/ros2/scr/install/vesc_control/lib/vesc_control/vesc_control_node\n'}
+[9.945353] (vesc_control) CommandEnded: {'returncode': 0}
+[9.983676] (vesc_control) JobEnded: {'identifier': 'vesc_control', 'rc': 0}
+[9.985311] (-) TimerEvent: {}
+[9.985468] (-) EventReactorShutdown: {}

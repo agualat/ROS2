@@ -1,0 +1,3 @@
+Invoking command in '/home/jetson/ros2/scr/build/vesc_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetson/ros2/scr/vesc_control -DCMAKE_INSTALL_PREFIX=/home/jetson/ros2/scr/install/vesc_control
+Invoked command in '/home/jetson/ros2/scr/build/vesc_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetson/ros2/scr/vesc_control -DCMAKE_INSTALL_PREFIX=/home/jetson/ros2/scr/install/vesc_control
+Invoking command in '/home/jetson/ros2/scr/build/vesc_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetson/ros2/scr/build/vesc_control -- -j6 -l6

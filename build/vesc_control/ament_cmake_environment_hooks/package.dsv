@@ -1,0 +1,4 @@
+source;share/vesc_control/local_setup.bash
+source;share/vesc_control/local_setup.dsv
+source;share/vesc_control/local_setup.sh
+source;share/vesc_control/local_setup.zsh

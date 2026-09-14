@@ -1,0 +1,18 @@
+[0.037s] Invoking command in '/home/jetson/ros2/scr/build/vesc_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetson/ros2/scr/vesc_control -DCMAKE_INSTALL_PREFIX=/home/jetson/ros2/scr/install/vesc_control
+[0.772s] -- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[3.991s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.051s] -- Found rclcpp: 28.1.21 (/opt/ros/jazzy/share/rclcpp/cmake)
+[4.288s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[4.315s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[4.355s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.429s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.628s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[4.631s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[5.026s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.245s] -- Found std_msgs: 5.3.8 (/opt/ros/jazzy/share/std_msgs/cmake)
+[5.729s] -- Configuring done (5.1s)
+[5.924s] -- Generating done (0.1s)
+[5.937s] -- Build files have been written to: /home/jetson/ros2/scr/build/vesc_control
+[6.102s] Invoked command in '/home/jetson/ros2/scr/build/vesc_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetson/ros2/scr/vesc_control -DCMAKE_INSTALL_PREFIX=/home/jetson/ros2/scr/install/vesc_control
+[6.108s] Invoking command in '/home/jetson/ros2/scr/build/vesc_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetson/ros2/scr/build/vesc_control -- -j6 -l6
+[7.027s] [ 20%] Building CXX object CMakeFiles/vesc_control_node.dir/src/vesc_control_node.cpp.o
