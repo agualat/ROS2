@@ -17,7 +17,9 @@ mando --BT--> game_controller_node --/joy--> vesc_teleop_node --/vesc/motor_erpm
 | Stick derecho horizontal | Dirección (servo 0.1 - 0.9) |
 
 Si el mando se desconecta o deja de publicar durante `joy_timeout_sec` (0.5 s), el motor
-pasa a ERPM 0. Al cerrar el teleop con Ctrl+C también se manda ERPM 0.
+pasa a ERPM 0. Al cerrar el teleop con Ctrl+C también se manda ERPM 0. Además,
+`vesc_control_node` libera el motor si pasa `command_timeout_sec` (0.5 s) sin recibir
+ERPM, por si el teleop se cae de golpe; por eso el teleop repite el ERPM a 20 Hz.
 
 Todo se ajusta en `config/teleop.yaml`. Si el carro gira al revés, `invert_steering: true`.
 

@@ -118,9 +118,11 @@ private:
         const auto command =
             vesc_teleop::computeCommand(config_, msg->axes, msg->buttons);
 
-        // Sólo se publica al cambiar: vesc_control_node ya
-        // reenvía el último ERPM a la VESC (keepalive).
-        if (command.erpm != last_erpm_) {
+        // Mientras el motor gira se repite en cada /joy
+        // (autorepeat 20 Hz): vesc_control_node libera el
+        // motor si deja de recibir comandos (watchdog).
+        // El 0 sólo se manda una vez, al cambiar.
+        if (command.erpm != 0 || command.erpm != last_erpm_) {
             publishErpm(command.erpm);
         }
 
