@@ -6,8 +6,10 @@
 #include "vesc_control/vesc_interface.hpp"
 #include "vesc_control/servo_controller.hpp"
 #include "vesc_control/motor_controller.hpp"
+#include "vesc_control/port_detection.hpp"
 
 #include <chrono>
+#include <cmath>
 #include <memory>
 #include <string>
 #include <stdexcept>
@@ -20,10 +22,43 @@ public:
     VescControlNode()
         : Node("vesc_control_node")
     {
-        port_ =
+        /*
+         * "auto" busca la VESC por VID:PID USB, así no
+         * depende de que el kernel le asigne ttyACM0.
+         * También acepta una ruta fija, p. ej.
+         * /dev/serial/by-id/usb-STMicroelectronics_...
+         */
+
+        const auto requested_port =
             declare_parameter<std::string>(
                 "port",
-                "/dev/ttyACM0");
+                "auto");
+
+        const auto vesc_vid =
+            declare_parameter<std::string>(
+                "vesc_usb_vid",
+                "0483");
+
+        const auto vesc_pid =
+            declare_parameter<std::string>(
+                "vesc_usb_pid",
+                "5740");
+
+        try {
+            port_ =
+                vesc_control::resolvePort(
+                    requested_port,
+                    vesc_vid,
+                    vesc_pid);
+        } catch (const std::exception & error) {
+
+            RCLCPP_FATAL(
+                get_logger(),
+                "%s",
+                error.what());
+
+            throw;
+        }
 
         /*
          * Frecuencia de reenvío del último comando de motor.
@@ -56,6 +91,31 @@ public:
                 "invert_motor",
                 true);
 
+        /*
+         * Watchdog de comandos.
+         *
+         * Si no llega ningún /vesc/motor_erpm en este tiempo
+         * se libera el motor (corriente 0). Así, si se cae
+         * el nodo que manda (teleop, navegación...), el carro
+         * no sigue a la última velocidad para siempre.
+         *
+         * Quien publique ERPM tiene que repetirlo mientras
+         * quiera que el motor gire. 0 desactiva el watchdog
+         * (comportamiento anterior: un comando dura hasta
+         * que llegue otro).
+         */
+
+        command_timeout_ =
+            declare_parameter<double>(
+                "command_timeout_sec",
+                0.5);
+
+        if (!std::isfinite(command_timeout_) ||
+            command_timeout_ < 0.0)
+        {
+            command_timeout_ = 0.5;
+        }
+
         RCLCPP_INFO(
             get_logger(),
             "================================");
@@ -66,8 +126,9 @@ public:
 
         RCLCPP_INFO(
             get_logger(),
-            "Puerto: %s",
-            port_.c_str());
+            "Puerto: %s (parametro: %s)",
+            port_.c_str(),
+            requested_port.c_str());
 
         RCLCPP_INFO(
             get_logger(),
@@ -174,6 +235,17 @@ public:
             get_logger(),
             "Sentido invertido: %s",
             invert_motor_ ? "si" : "no");
+
+        if (command_timeout_ > 0.0) {
+            RCLCPP_INFO(
+                get_logger(),
+                "Watchdog: motor libre tras %.2f s sin comandos",
+                command_timeout_);
+        } else {
+            RCLCPP_WARN(
+                get_logger(),
+                "Watchdog desactivado (command_timeout_sec = 0)");
+        }
     }
 
 
@@ -228,6 +300,12 @@ private:
         const int32_t requested =
             msg->data;
 
+        last_motor_cmd_ =
+            std::chrono::steady_clock::now();
+
+        const int32_t previous =
+            motor_->getErpm();
+
         const bool success =
             motor_->setErpm(
                 requested);
@@ -241,10 +319,14 @@ private:
             return;
         }
 
-        RCLCPP_INFO(
-            get_logger(),
-            "Motor ERPM: %d",
-            motor_->getErpm());
+        // Con el watchdog los comandos se repiten a ritmo
+        // fijo; sólo se registra cuando cambia el valor.
+        if (motor_->getErpm() != previous) {
+            RCLCPP_INFO(
+                get_logger(),
+                "Motor ERPM: %d",
+                motor_->getErpm());
+        }
     }
 
 
@@ -256,6 +338,31 @@ private:
     {
         if (!motor_->isActive()) {
             return;
+        }
+
+        if (command_timeout_ > 0.0) {
+
+            const double silence =
+                std::chrono::duration<double>(
+                    std::chrono::steady_clock::now() -
+                    last_motor_cmd_).count();
+
+            if (silence > command_timeout_) {
+
+                RCLCPP_WARN(
+                    get_logger(),
+                    "Sin comandos de motor durante %.2f s: "
+                    "motor libre",
+                    silence);
+
+                if (!motor_->stop()) {
+                    RCLCPP_ERROR(
+                        get_logger(),
+                        "Error liberando el motor");
+                }
+
+                return;
+            }
         }
 
         if (!motor_->keepAlive()) {
@@ -278,6 +385,11 @@ private:
     double keepalive_hz_;
 
     bool invert_motor_;
+
+    double command_timeout_;
+
+    std::chrono::steady_clock::time_point
+        last_motor_cmd_;
 
 
     std::unique_ptr<
