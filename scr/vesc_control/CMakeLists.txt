@@ -31,6 +31,7 @@ add_executable(
   src/vesc_interface.cpp
   src/servo_controller.cpp
   src/motor_controller.cpp
+  src/port_detection.cpp
 )
 
 

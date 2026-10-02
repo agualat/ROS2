@@ -1,0 +1,21 @@
+# Mapeo estandar SDL de game_controller_node (igual para Xbox, PS4, PS5, 8BitDo).
+# Comprueba los indices de tu mando con: ros2 topic echo /joy
+vesc_teleop_node:
+  ros__parameters:
+    deadman_button: 9       # LB / L1: mantener pulsado para mover el carro
+    turbo_button: 10        # RB / R1: permite turbo_max_erpm
+    throttle_axis: 1        # stick izquierdo vertical (arriba = adelante)
+    steering_axis: 2        # stick derecho horizontal
+    max_erpm: 5000          # limite normal; vesc_control recorta a +/-20000
+    turbo_max_erpm: 10000
+    invert_throttle: false
+    steering_center: 0.5
+    steering_range: 0.4     # 0.5 +/- 0.4 = 0.1 - 0.9, el rango del servo
+    invert_steering: false  # poner true si el carro gira al reves
+    joy_timeout_sec: 0.5    # sin /joy durante este tiempo -> ERPM 0
+
+game_controller_node:
+  ros__parameters:
+    device_id: 0
+    deadzone: 0.05
+    autorepeat_rate: 20.0   # mantiene /joy vivo para el watchdog del teleop

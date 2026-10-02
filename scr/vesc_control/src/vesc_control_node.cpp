@@ -6,6 +6,7 @@
 #include "vesc_control/vesc_interface.hpp"
 #include "vesc_control/servo_controller.hpp"
 #include "vesc_control/motor_controller.hpp"
+#include "vesc_control/port_detection.hpp"
 
 #include <chrono>
 #include <memory>
@@ -20,10 +21,43 @@ public:
     VescControlNode()
         : Node("vesc_control_node")
     {
-        port_ =
+        /*
+         * "auto" busca la VESC por VID:PID USB, así no
+         * depende de que el kernel le asigne ttyACM0.
+         * También acepta una ruta fija, p. ej.
+         * /dev/serial/by-id/usb-STMicroelectronics_...
+         */
+
+        const auto requested_port =
             declare_parameter<std::string>(
                 "port",
-                "/dev/ttyACM0");
+                "auto");
+
+        const auto vesc_vid =
+            declare_parameter<std::string>(
+                "vesc_usb_vid",
+                "0483");
+
+        const auto vesc_pid =
+            declare_parameter<std::string>(
+                "vesc_usb_pid",
+                "5740");
+
+        try {
+            port_ =
+                vesc_control::resolvePort(
+                    requested_port,
+                    vesc_vid,
+                    vesc_pid);
+        } catch (const std::exception & error) {
+
+            RCLCPP_FATAL(
+                get_logger(),
+                "%s",
+                error.what());
+
+            throw;
+        }
 
         /*
          * Frecuencia de reenvío del último comando de motor.
@@ -66,8 +100,9 @@ public:
 
         RCLCPP_INFO(
             get_logger(),
-            "Puerto: %s",
-            port_.c_str());
+            "Puerto: %s (parametro: %s)",
+            port_.c_str(),
+            requested_port.c_str());
 
         RCLCPP_INFO(
             get_logger(),
