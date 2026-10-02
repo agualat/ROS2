@@ -1,0 +1,22 @@
+# Parametros del driver oficial realsense2_camera (C++), ROS 2 Jazzy.
+# La serie y el puerto USB se seleccionan antes del arranque en el launch.
+enable_color: true
+enable_depth: true
+enable_infra1: false
+enable_infra2: false
+rgb_camera.color_profile: 640x480x60
+depth_module.depth_profile: 848x480x90
+enable_gyro: true
+enable_accel: true
+unite_imu_method: 2
+# Evitar trabajo adicional en CPU durante las pruebas de rendimiento.
+align_depth.enable: false
+pointcloud.enable: false
+publish_tf: true
+depth_qos: SENSOR_DATA
+color_qos: SENSOR_DATA
+gyro_qos: SENSOR_DATA
+accel_qos: SENSOR_DATA
+base_frame_id: link
+reconnect_timeout: 3.0
+wait_for_device_timeout: 15.0
