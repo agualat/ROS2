@@ -1,0 +1,11 @@
+# Build from the ROS2 root; retain scr/ to match the tested Jetson workspace.
+build/
+install/
+log/
+build_d435i/
+install_d435i/
+log_d435i/
+__pycache__/
+*.py[cod]
+*.swp
+*~
